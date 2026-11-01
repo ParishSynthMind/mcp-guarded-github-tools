@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.jsonl
+.env
+config.json
+PORTFOLIO-LISTING.md
+PROGRESS.md

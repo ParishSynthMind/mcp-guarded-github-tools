@@ -1,0 +1,39 @@
+{
+  "name": "mcp-guarded-github-tools",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server that gives an AI coding agent guarded, audited access to GitHub issues and pull requests.",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "audit-tail": "node dist/scripts/audit-tail.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  },
+  "bin": {
+    "mcp-guarded-github-tools": "dist/src/index.js",
+    "audit-tail": "dist/scripts/audit-tail.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "github",
+    "claude",
+    "ai-agent"
+  ]
+}

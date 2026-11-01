@@ -1,0 +1,6 @@
+{
+  "commentAllowlist": ["your-org/your-sandbox-repo"],
+  "maxCommentLength": 2000,
+  "dryRun": true,
+  "auditLogPath": "./audit.jsonl"
+}

@@ -135,7 +135,7 @@ A raw line looks like this (real line from the live run):
 
 ## Tests
 
-35 tests with vitest, no secrets needed. (A GitHub Actions workflow that runs them on Node 22 and 24 is written and will be added shortly.) Each test drives the real server through an in-memory MCP client, with GitHub's API replaced by a recording fake.
+35 tests with vitest, no secrets needed. GitHub Actions runs them on Node 22 and 24 on every push. Each test drives the real server through an in-memory MCP client, with GitHub's API replaced by a recording fake.
 
 ![35 tests passing](media/tests-passing.png)
 

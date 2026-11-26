@@ -2,6 +2,8 @@
 
 A [Model Context Protocol](https://modelcontextprotocol.io) server, written in TypeScript, that gives an AI coding agent (Claude Code, Claude Desktop or any MCP client) **read access to GitHub issues and pull requests, plus exactly one tightly fenced write: adding a comment**. Every call is written to an append-only audit log with secrets blanked out.
 
+**Status:** tested live on 1 November 2026 with Claude Code and the MCP Inspector, reading public repos without a token, with comments in dry-run mode. No real comment has been posted; a GitHub token and private repos are covered only by tests against a fake GitHub API, and it has not been tried in Claude Desktop.
+
 The point is the guard rails. An agent with a raw GitHub token can merge, close, relabel or force-push. This server gives it what it needs to triage and review, and nothing it could break.
 
 ![Live run: Claude Code reads a PR, then gets refused when it tries to comment outside the allowlist](media/live-claude-code-run.png)
